@@ -16,7 +16,7 @@
         }
 
         const nextSong = album.songs[nextSongIndex];
-        playPauseAndUpdate(nextSong);
+        player.playPause(nextSong);
     });
 
 
@@ -32,7 +32,7 @@
         }
 
         const previousSong = album.songs[previousSongIndex];
-        playPauseAndUpdate(previousSong);
+        player.playPause(previousSong);
     });
 
     $('#time-control input').on('input', function (event) {
